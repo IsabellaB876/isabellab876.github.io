@@ -5,6 +5,7 @@
 /*Global*/
 #root {
   max-width: 1280px;
+  min-height: 100vh;
   margin: 0 auto;
   padding: 0rem;
 }
@@ -18,10 +19,13 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 75px;
+  overflow-y: auto;
 }
 
 body {
   background-color: #F9F2ED !important;
+  height: 100%;
+  overflow-y: auto;
 }
 
 h1 {
@@ -46,7 +50,6 @@ p {
 nav.navbar {
   background-color: #F9F2ED !important;
   padding: 10px 0;
-  position: fixed;
   z-index: 9999;
   font-family: 'Albert Sans', sans-serif !important;
   font-size: 20px !important;

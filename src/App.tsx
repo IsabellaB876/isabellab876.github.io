@@ -1,15 +1,17 @@
-import NavBar from './components/NavBar';
+import { Container } from "react-bootstrap";
+import NavBar from "./components/NavBar";
 import Banner from "./components/Banner";
-import './App.css'
+import ValuesSection from "./components/ValuesSection";
+import "./App.css";
 
 function App() {
-
   return (
-    <>
+    <Container>
       <NavBar />
       <Banner />
-    </>
-  )
+      <ValuesSection />
+    </Container>
+  );
 }
 
-export default App
+export default App;
