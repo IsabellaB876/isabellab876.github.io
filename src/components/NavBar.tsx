@@ -10,7 +10,7 @@ function NavBar() {
   const toggleDisplay = () => setDisplay(!display);
   return (
     <>
-      <Navbar bg="light" data-bs-theme="light" fixed="top">
+      <Navbar bg="transparent" data-bs-theme="light" fixed="top">
         <Container>
           <Navbar.Brand href="/">
             <img src={logo} alt="Logo" />
