@@ -24,7 +24,7 @@ body, html {
   overflow-x: hidden;
   padding-top: 40px;
   max-width: 100vw;
-  background-color: #F9F2ED !important;
+  background-color: #f9f5f2 !important;
 }
 
 h1 {
@@ -48,7 +48,7 @@ p {
 .white-p {
   font-family: 'Albert Sans', sans-serif !important;
   font-size: 20px;
-  color: #F9F2ED;
+  color: #f9f5f2;
 }
 
 /*NavBar*/ 
@@ -58,7 +58,7 @@ nav.navbar {
   font-family: 'Albert Sans', sans-serif !important;
   font-size: 20px !important;
   color: #20204B !important;
-  background-color: #F9F2ED;
+  background-color: #f9f5f2;
 }
 
 .design-value {
