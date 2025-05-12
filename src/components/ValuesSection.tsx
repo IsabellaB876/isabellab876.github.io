@@ -12,7 +12,7 @@ function ValuesSection() {
       <Stack gap={4} id="values-section">
         <h2>MY VALUES</h2>
         <Stack gap={5} direction="horizontal">
-          <Stack gap={3} className="align-items-center">
+          <div className="align-items-center text-center w-auto">
             <DesignValue mode="color" />
             <Image
               src={design}
@@ -26,8 +26,8 @@ function ValuesSection() {
               Pushing boundaries with thoughtful, user-first designs that
               balance beauty and function.
             </p>
-          </Stack>
-          <Stack gap={3} className="align-items-center">
+          </div>
+          <div className="align-items-center text-center w-auto">
             <DevelopmentValue mode="color" />
             <Image
               src={dev}
@@ -41,8 +41,8 @@ function ValuesSection() {
               Persevering through challenges to turn complex problems into
               clean, meaningful applications
             </p>
-          </Stack>
-          <Stack gap={3} className="align-items-center">
+          </div>
+          <div className="align-items-center text-center w-auto">
             <IllustrationValue mode="color" />
             <Image
               src={illustration}
@@ -56,7 +56,7 @@ function ValuesSection() {
               Embracing fun and storytelling to bring ideas to life through
               bold, expressive visuals.
             </p>
-          </Stack>
+          </div>
         </Stack>
       </Stack>
     </Container>

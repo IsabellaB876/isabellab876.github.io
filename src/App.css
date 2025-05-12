@@ -67,6 +67,7 @@ nav.navbar {
   padding: 1rem;
   align-items: center; 
   justify-items: center;
+  display: inline-flex;
   flex-wrap: wrap;
 }
 

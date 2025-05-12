@@ -8,6 +8,7 @@ function NavBar() {
   const [display, setDisplay] = useState<boolean>(false);
 
   const toggleDisplay = () => setDisplay(!display);
+
   return (
     <>
       <Navbar bg="transparent" data-bs-theme="light" fixed="top">
