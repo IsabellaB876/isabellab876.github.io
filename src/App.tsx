@@ -14,7 +14,7 @@ function App() {
       animate={{ opacity: 1 }}
       transition={{ duration: 2 }}
     >
-      <Stack gap={3} className="align-items-center">
+      <Stack gap={4} className="align-items-center">
         <NavBar />
         <Banner />
         <a href="#values-section">

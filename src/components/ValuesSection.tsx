@@ -1,4 +1,4 @@
-import { Container, Stack, Image } from "react-bootstrap";
+import { Container, Stack, Image, Row } from "react-bootstrap";
 import design from "../assets/design-graphic.svg";
 import dev from "../assets/dev-graphic.svg";
 import illustration from "../assets/illustration-graphic.svg";
@@ -11,8 +11,11 @@ function ValuesSection() {
     <Container>
       <Stack gap={4} id="values-section">
         <h2>MY VALUES</h2>
-        <Stack gap={5} direction="horizontal">
-          <div className="align-items-center text-center w-auto">
+        <Row xs={1} sm={1} lg={3} xl={3} className="g-4">
+          <div
+            className="align-items-center text-center w-auto"
+            style={{ maxWidth: "370px" }}
+          >
             <DesignValue mode="color" />
             <Image
               src={design}
@@ -27,7 +30,10 @@ function ValuesSection() {
               balance beauty and function.
             </p>
           </div>
-          <div className="align-items-center text-center w-auto">
+          <div
+            className="align-items-center text-center w-auto"
+            style={{ maxWidth: "370px" }}
+          >
             <DevelopmentValue mode="color" />
             <Image
               src={dev}
@@ -42,7 +48,10 @@ function ValuesSection() {
               clean, meaningful applications
             </p>
           </div>
-          <div className="align-items-center text-center w-auto">
+          <div
+            className="align-items-center text-center w-auto"
+            style={{ maxWidth: "370px" }}
+          >
             <IllustrationValue mode="color" />
             <Image
               src={illustration}
@@ -57,7 +66,7 @@ function ValuesSection() {
               bold, expressive visuals.
             </p>
           </div>
-        </Stack>
+        </Row>
       </Stack>
     </Container>
   );
