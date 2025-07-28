@@ -7,7 +7,10 @@ interface ValueProps {
 
 function DesignValue({ mode }: ValueProps) {
   return (
-    <Stack direction="horizontal" gap={3} className="design-value">
+    <div
+      style={{ maxWidth: "160px" }}
+      className="inline-flex gap-3 design-value"
+    >
       <Image
         src={star}
         alt="illustration of the value"
@@ -15,7 +18,7 @@ function DesignValue({ mode }: ValueProps) {
         className="align-self-center"
       />
       <p className="white-p mb-0 align-self-center">Design</p>
-    </Stack>
+    </div>
   );
 }
 

@@ -3,10 +3,13 @@ import donut from "../assets/donut-colored.svg";
 import circle from "../assets/circle-colored.svg";
 import star from "../assets/star-colored.svg";
 import { ProjectProps } from "../interfaces/Project";
+import { useNavigate } from "react-router-dom";
 
 function Project({ title, photo, route, values }: ProjectProps) {
+  const navigate = useNavigate();
+
   return (
-    <Stack className="project-card">
+    <Stack className="project-card" onClick={() => navigate("/" + route)}>
       <div className="image-wrapper">
         <Image
           src={photo}

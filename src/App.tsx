@@ -6,8 +6,29 @@ import ProjectsSection from "./components/ProjectsSection";
 import "./App.css";
 import { motion } from "framer-motion";
 import "bootstrap-icons/font/bootstrap-icons.css";
+import { Routes, Route } from "react-router";
+import { HashRouter } from "react-router-dom";
+import Radien from "./components/Radien";
 
 function App() {
+  return (
+    <HashRouter>
+      <div className="wd-main-content-offset">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/RadienTaskTracker" element={<Radien />} />
+          <Route path="/ZineWork" element={<Radien />} />
+          <Route path="/PersonalSite" element={<Radien />} />
+          <Route path="/AAR" element={<Radien />} />
+          <Route path="/Medvault" element={<Radien />} />
+          <Route path="/HackBeanpot" element={<Radien />} />
+        </Routes>
+      </div>
+    </HashRouter>
+  );
+}
+
+function Home() {
   return (
     <motion.div
       initial={{ opacity: 0 }}

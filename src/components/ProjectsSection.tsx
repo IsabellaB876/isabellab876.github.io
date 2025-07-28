@@ -6,39 +6,46 @@ function ProjectsSection() {
   const medvault = {
     title: "MEDVAULT",
     photo: medvaultImage,
-    route: "",
+    route: "Medvault",
     values: ["Design", "Development"],
   };
 
   const radien = {
     title: "RADIEN TASK TRACKER",
     photo: medvaultImage,
-    route: "",
+    route: "RadienTaskTracker",
     values: ["Design"],
   };
 
   const hbp = {
     title: "HACKBEANPOT DESIGN TEAM",
     photo: medvaultImage,
-    route: "",
+    route: "HackBeanpot",
     values: ["Design", "Illustration"],
   };
 
   const wayfair = {
     title: "WAYFAIR ADDRESS ATTRIBUTE REPOSITORY",
     photo: medvaultImage,
-    route: "",
+    route: "AAR",
     values: ["Design", "Development"],
   };
 
   const site = {
     title: "PERSONAL SITE",
     photo: medvaultImage,
-    route: "",
+    route: "PersonalSite",
     values: ["Design", "Development", "Illustration"],
   };
 
-  const projects = [medvault, radien, hbp, wayfair, site];
+  const zines = {
+    title: "ZINE WORK",
+    photo: medvaultImage,
+    route: "ZineWork",
+    values: ["Illustration"],
+  };
+
+  const projects = [medvault, radien, hbp, wayfair, site, zines];
 
   return (
     <Container>
