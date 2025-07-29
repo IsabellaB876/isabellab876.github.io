@@ -2,6 +2,7 @@ import { Stack, Container, Image, Row, Col } from "react-bootstrap";
 import DesignValue from "./DesignValue";
 import NavBar from "./NavBar";
 import medvaultImage from "../assets/medvault-home.svg";
+import radienThumbnail from "../assets/Radien.png";
 
 function Radien() {
   return (
@@ -28,9 +29,10 @@ function Radien() {
           </Col>
           <Col xs={12} md={6}>
             <Image
-              src={medvaultImage}
+              src={radienThumbnail}
               alt="Radien Task Tracker protoype screens"
               fluid
+              className="project-image"
             />
           </Col>
         </Row>
