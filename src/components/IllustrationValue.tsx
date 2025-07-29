@@ -1,21 +1,32 @@
 import { Image, Stack } from "react-bootstrap";
-import star from "../assets/star.svg";
+import circle from "../assets/circle.svg";
+import circleMono from "../assets/circleMono.svg";
 
 interface ValueProps {
   mode: string;
 }
 
 function IllustrationValue({ mode }: ValueProps) {
-  return (
+  return mode === "color" ? (
     <Stack direction="horizontal" gap={3} className="illustration-value">
       <Image
-        src={star}
+        src={circle}
         alt="illustration of the value"
         fluid
         className="align-self-center"
       />
       <p className="white-p mb-0 align-self-center">Illustration</p>
     </Stack>
+  ) : (
+    <div className="inline-flex gap-3 mono">
+      <Image
+        src={circleMono}
+        alt="illustration of the value"
+        fluid
+        className="align-self-center"
+      />
+      <p className="mb-0 align-self-center">Illustration</p>
+    </div>
   );
 }
 

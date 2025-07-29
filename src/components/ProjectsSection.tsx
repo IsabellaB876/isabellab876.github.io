@@ -1,4 +1,5 @@
 import { Container, Row, Col, Stack } from "react-bootstrap";
+import { useState } from "react";
 import Project from "./Project";
 import medvaultThumbnail from "../assets/Medvault.png";
 import radienThumbnail from "../assets/Radien.png";
@@ -11,6 +12,53 @@ import IllustrationValue from "./IllustrationValue";
 import DevelopmentValue from "./DevelopmentValue";
 
 function ProjectsSection() {
+  const [designStatus, setDesignStatus] = useState("mono");
+  const [devStatus, setDevStatus] = useState("mono");
+  const [illuStatus, setIlluStatus] = useState("mono");
+  const [values, setValues] = useState<string[]>([]);
+
+  const handleDesignToggle = () => {
+    if (designStatus === "color") {
+      setDesignStatus("mono");
+    } else {
+      setDesignStatus("color");
+    }
+
+    setValues((prev) =>
+      prev.includes("Design")
+        ? prev.filter((v) => v !== "Design")
+        : [...prev, "Design"]
+    );
+  };
+
+  const handleDevToggle = () => {
+    if (devStatus === "color") {
+      setDevStatus("mono");
+    } else {
+      setDevStatus("color");
+    }
+
+    setValues((prev) =>
+      prev.includes("Development")
+        ? prev.filter((v) => v !== "Development")
+        : [...prev, "Development"]
+    );
+  };
+
+  const handleIlluToggle = () => {
+    if (illuStatus === "color") {
+      setIlluStatus("mono");
+    } else {
+      setIlluStatus("color");
+    }
+
+    setValues((prev) =>
+      prev.includes("Illustration")
+        ? prev.filter((v) => v !== "Illustration")
+        : [...prev, "Illustration"]
+    );
+  };
+
   const medvault = {
     title: "MEDVAULT",
     photo: medvaultThumbnail,
@@ -63,23 +111,29 @@ function ProjectsSection() {
           <div>
             <p>Filter</p>
           </div>
-          <div>
-            <DesignValue mode="mono" />
+          <div onClick={handleDesignToggle}>
+            <DesignValue mode={designStatus} />
           </div>
-          <div>
-            <DevelopmentValue mode="mono" />
+          <div onClick={handleDevToggle}>
+            <DevelopmentValue mode={devStatus} />
           </div>
-          <div>
-            <IllustrationValue mode="mono" />
+          <div onClick={handleIlluToggle}>
+            <IllustrationValue mode={illuStatus} />
           </div>
         </div>
 
         <Row xs={1} sm={2} lg={2} xl={2} className="g-4">
-          {projects.map((project, index) => (
-            <Col key={index}>
-              <Project {...project} />
-            </Col>
-          ))}
+          {projects
+            .filter(
+              (project) =>
+                values.length === 0 ||
+                project.values.some((v) => values.includes(v))
+            )
+            .map((project, index) => (
+              <Col key={index}>
+                <Project {...project} />
+              </Col>
+            ))}
         </Row>
       </Stack>
     </Container>
