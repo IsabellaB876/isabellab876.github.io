@@ -1,4 +1,4 @@
-import { Container, Stack, Image, Row } from "react-bootstrap";
+import { Container, Stack, Image, Row, Col } from "react-bootstrap";
 import design from "../assets/design-graphic.svg";
 import dev from "../assets/dev-graphic.svg";
 import illustration from "../assets/illustration-graphic.svg";
@@ -11,8 +11,8 @@ function ValuesSection() {
     <Container>
       <Stack gap={4} id="values-section">
         <h2>MY VALUES</h2>
-        <Row xs={1} sm={1} lg={3} xl={3} className="g-4">
-          <div
+        <Row xs={1} sm={1} lg={3} xl={3} className="g-4 justify-content-center">
+          <Col
             className="align-items-center text-center w-auto"
             style={{ maxWidth: "370px" }}
           >
@@ -29,8 +29,8 @@ function ValuesSection() {
               Pushing boundaries with thoughtful, user-first designs that
               balance beauty and function.
             </p>
-          </div>
-          <div
+          </Col>
+          <Col
             className="align-items-center text-center w-auto"
             style={{ maxWidth: "370px" }}
           >
@@ -47,8 +47,8 @@ function ValuesSection() {
               Persevering through challenges to turn complex problems into
               clean, meaningful applications
             </p>
-          </div>
-          <div
+          </Col>
+          <Col
             className="align-items-center text-center w-auto"
             style={{ maxWidth: "370px" }}
           >
@@ -65,7 +65,7 @@ function ValuesSection() {
               Embracing fun and storytelling to bring ideas to life through
               bold, expressive visuals.
             </p>
-          </div>
+          </Col>
         </Row>
       </Stack>
     </Container>

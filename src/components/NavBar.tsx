@@ -2,12 +2,24 @@ import { Container, Button, Image } from "react-bootstrap";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import logo from "../assets/logo.svg";
-import { useState } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 
 function NavBar() {
-  const [display, setDisplay] = useState<boolean>(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
-  const toggleDisplay = () => setDisplay(!display);
+  const handleScrollToSection = (sectionId: string) => {
+    if (location.pathname === "/") {
+      // Already on homepage, just scroll
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      // Navigate to homepage with hash
+      navigate(`/#${sectionId}`);
+    }
+  };
 
   return (
     <>
@@ -16,11 +28,34 @@ function NavBar() {
           <Navbar.Brand href="/">
             <img src={logo} alt="Logo" />
           </Navbar.Brand>
-          <Nav className="justify-content-end">
-            <Nav.Link href="#home">Values</Nav.Link>
-            <Nav.Link href="#home">Projects</Nav.Link>
-            <Nav.Link href="#features">Tools</Nav.Link>
-            <Nav.Link href="#pricing">Contact</Nav.Link>
+          <Nav className="justify-content-end gap-4">
+            <a
+              href="#values-section"
+              onClick={(e) => {
+                e.preventDefault();
+                handleScrollToSection("values-section");
+              }}
+            >
+              Values
+            </a>
+            <a
+              href="#projects-section"
+              onClick={(e) => {
+                e.preventDefault();
+                handleScrollToSection("projects-section");
+              }}
+            >
+              Projects
+            </a>
+            <a
+              href="#about-section"
+              onClick={(e) => {
+                e.preventDefault();
+                handleScrollToSection("about-section");
+              }}
+            >
+              About
+            </a>
           </Nav>
         </Container>
       </Navbar>

@@ -10,6 +10,7 @@ import zineThumbnail from "../assets/Zines.png";
 import DesignValue from "./DesignValue";
 import IllustrationValue from "./IllustrationValue";
 import DevelopmentValue from "./DevelopmentValue";
+import { motion } from "framer-motion";
 
 function ProjectsSection() {
   const [designStatus, setDesignStatus] = useState("mono");
@@ -104,20 +105,20 @@ function ProjectsSection() {
   const projects = [medvault, radien, hbp, wayfair, site, zines];
 
   return (
-    <Container>
+    <Container id="projects-section">
       <Stack gap={4}>
         <h2>PROJECTS</h2>
         <div className="d-flex align-items-center gap-4 flex-wrap">
           <div>
             <p>Filter</p>
           </div>
-          <div onClick={handleDesignToggle}>
+          <div onClick={handleDesignToggle} style={{ cursor: "pointer" }}>
             <DesignValue mode={designStatus} />
           </div>
-          <div onClick={handleDevToggle}>
+          <div onClick={handleDevToggle} style={{ cursor: "pointer" }}>
             <DevelopmentValue mode={devStatus} />
           </div>
-          <div onClick={handleIlluToggle}>
+          <div onClick={handleIlluToggle} style={{ cursor: "pointer" }}>
             <IllustrationValue mode={illuStatus} />
           </div>
         </div>
@@ -130,9 +131,16 @@ function ProjectsSection() {
                 project.values.some((v) => values.includes(v))
             )
             .map((project, index) => (
-              <Col key={index}>
-                <Project {...project} />
-              </Col>
+              <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, ease: "easeOut" }}
+                viewport={{ once: true }}
+              >
+                <Col key={index} style={{ cursor: "pointer" }}>
+                  <Project {...project} />
+                </Col>
+              </motion.div>
             ))}
         </Row>
       </Stack>

@@ -9,6 +9,9 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import { Routes, Route } from "react-router";
 import { HashRouter } from "react-router-dom";
 import Radien from "./components/Radien";
+import AboutMe from "./components/AboutMe";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 function App() {
   return (
@@ -29,25 +32,53 @@ function App() {
 }
 
 function Home() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.replace("#", "");
+      const section = document.getElementById(id);
+      if (section) {
+        // Slight timeout ensures the section is mounted
+        setTimeout(() => {
+          section.scrollIntoView({ behavior: "smooth" });
+        }, 100);
+      }
+    }
+  }, [location]);
+
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 2 }}
+    <Stack
+      className="align-items-center"
+      style={{ gap: "4rem", marginBottom: "4rem" }}
     >
-      <Stack gap={4} className="align-items-center">
-        <NavBar />
-        <Banner />
-        <a href="#values-section">
-          <i
-            className="bi bi-chevron-compact-down"
-            style={{ fontSize: "4rem", color: "#20204B" }}
-          ></i>
-        </a>
+      <NavBar />
+      <Banner />
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        viewport={{ once: true }}
+      >
         <ValuesSection />
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        viewport={{ once: true }}
+      >
         <ProjectsSection />
-      </Stack>
-    </motion.div>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        viewport={{ once: true }}
+      >
+        <AboutMe />
+      </motion.div>
+    </Stack>
   );
 }
 
