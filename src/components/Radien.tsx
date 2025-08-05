@@ -1,13 +1,16 @@
 import { Stack, Container, Image, Row, Col } from "react-bootstrap";
 import DesignValue from "./DesignValue";
 import NavBar from "./NavBar";
-import medvaultImage from "../assets/medvault-home.svg";
 import radienThumbnail from "../assets/Radien.png";
+import radien1 from "../assets/radien1.png";
+import radien2 from "../assets/radien2.png";
+import radien3 from "../assets/radien3.png";
+import radien4 from "../assets/radien4.mp4";
 
 function Radien() {
   return (
     <Container>
-      <Stack gap={5} style={{ paddingTop: "30px" }}>
+      <Stack style={{ gap: "4rem", marginBottom: "4rem" }}>
         <NavBar />
         <a href="/">
           {" "}
@@ -20,10 +23,13 @@ function Radien() {
             className="d-flex flex-column justify-content-end"
           >
             <h1>RADIEN TASK TRACKER</h1>
-            <p>June - August 2024</p>
+            <p style={{ fontStyle: "italic", color: "#8888AC" }}>
+              June - August 2024
+            </p>
             <p>
               A project manager emphasizing transparency and efficiency built
-              specifically for front-end developers.
+              specifically for front-end developers. Developed for business,
+              Radien in the UX Design class
             </p>
             <DesignValue mode="color" />
           </Col>
@@ -32,106 +38,137 @@ function Radien() {
               src={radienThumbnail}
               alt="Radien Task Tracker protoype screens"
               fluid
-              className="project-image"
             />
           </Col>
         </Row>
         <Row className="d-flex align-items-bottom">
           <Col xs={12} md={4}>
             <h2>THE PROBLEM</h2>
-            <p>lorem ipsum dolor</p>
+            <p>
+              Front-end software development lacks clear communication, causing
+              engineers and managers to be less efficient.
+            </p>
           </Col>
-          <Col>
+          <Col xs={12} md={4}>
             <i
               className="d-flex flex-column justify-content-center align-items-center bi bi-lightbulb"
               style={{ fontSize: "4rem", color: "#8888AC" }}
             ></i>
           </Col>
-          <Col className="justify-content-center">
+          <Col xs={12} md={4} className="justify-content-center">
             <h2>THE SOLUTION</h2>
-            <p>lorem ipsum dolor</p>
+            <p>
+              An advanced ticketing platform enhancing transparency,
+              communication, and efficiency
+            </p>
           </Col>
         </Row>
         <Row xs={1} sm={2} lg={2} xl={2} className="g-4">
           <Col>
             <div className="align-items-center text-center w-auto">
               <Image
-                src={medvaultImage}
+                src={radien1}
                 alt="illustration of the value"
                 fluid
                 className="align-self-center"
               />
               <h2>RESEARCH</h2>
               <p className="text-center m-0">
-                Pushing boundaries with thoughtful, user-first designs that
-                balance beauty and function.
+                With a team of 3 other students, we interviewed 4 users of
+                Radien’s existing product. We determined that many front-end
+                developers and project managers struggle with communicating with
+                different teams.
               </p>
             </div>
           </Col>
           <Col>
             <div className="align-items-center text-center w-auto">
               <Image
-                src={medvaultImage}
+                src={radien2}
                 alt="illustration of the value"
                 fluid
                 className="align-self-center"
               />
               <h2>IDEATION</h2>
               <p className="text-center m-0">
-                Pushing boundaries with thoughtful, user-first designs that
-                balance beauty and function.
+                We came up with 20 ideas for potential solutions, falling into
+                the identified categories for improvement, communication,
+                efficiency, and organization. We landed on an improved ticket
+                tracking system.
               </p>
             </div>
           </Col>
           <Col>
             <div className="align-items-center text-center w-auto">
               <Image
-                src={medvaultImage}
+                src={radien3}
                 alt="illustration of the value"
                 fluid
                 className="align-self-center"
               />
               <h2>PROTOTYPE</h2>
               <p className="text-center m-0">
-                Pushing boundaries with thoughtful, user-first designs that
-                balance beauty and function.
+                Created a low fidelity prototype focusing on including as much
+                relevant ticket information as possible while still following
+                Radien’s minimalist existing design system. Developed user flow
+                for a more all encompassing ticket creating experience.
               </p>
             </div>
           </Col>
           <Col>
             <div className="align-items-center text-center w-auto">
-              <Image
-                src={medvaultImage}
-                alt="illustration of the value"
-                fluid
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                src={radien4}
                 className="align-self-center"
               />
               <h2>FINAL</h2>
               <p className="text-center m-0">
-                Pushing boundaries with thoughtful, user-first designs that
-                balance beauty and function.
+                Developed an interactive and high fidelity prototype on
+                prototype. Focuses on the user flows of viewing your ticket,
+                viewing other team’s tickets, creating tickets, and updating
+                ticket progress.
+                <br></br>
+                <a
+                  href="https://www.figma.com/proto/6OkQ8JdI5pncQ84Mfa81vx/Radien-P3?node-id=122-452&t=yKTQySW61QkQQi8x-1&starting-point-node-id=122%3A452"
+                  style={{ textDecoration: "underline" }}
+                >
+                  Figma
+                </a>
               </p>
             </div>
           </Col>
         </Row>
         <Row className="d-flex align-items-bottom">
           <Col xs={12} md={4}>
-            <h2>WHAT I LEARNED</h2>
-            <p>lorem ipsum dolor</p>
+            <h2>LEARNINGS</h2>
+            <p>
+              Working with an established business was allowed us to fully
+              immerse ourselves in user research. Our interviews defined our
+              product, which taught me the importance of understanding your
+              users well.
+            </p>
           </Col>
-          <Col>
+          <Col xs={12} md={4}>
             <i
               className="d-flex flex-column justify-content-center align-items-center bi bi-chat-dots"
               style={{ fontSize: "4rem", color: "#8888AC" }}
             ></i>
           </Col>
-          <Col className="justify-content-center">
-            <h2>WITH MORE TIME</h2>
-            <p>lorem ipsum dolor</p>
+          <Col xs={12} md={4} className="justify-content-center">
+            <h2>NEXT STEPS</h2>
+            <p>
+              Given the chance to develop this further I would like to refine
+              the UI, particularly the home page’s drawers. I would also like to
+              conduct UAT, so that I could see the impact of the product.
+            </p>
           </Col>
         </Row>
         <div className="d-flex justify-content-end">
-          <a href="/ZineWork">
+          <a href="#/ZineWork">
             Next project <i className="bi bi-chevron-right"></i>
           </a>
         </div>

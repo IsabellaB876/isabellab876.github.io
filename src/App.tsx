@@ -9,20 +9,23 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import { Routes, Route } from "react-router";
 import { HashRouter } from "react-router-dom";
 import Radien from "./components/Radien";
+import AAR from "./components/AAR";
 import AboutMe from "./components/AboutMe";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <HashRouter>
+      <ScrollToTop />
       <div className="wd-main-content-offset">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/RadienTaskTracker" element={<Radien />} />
           <Route path="/ZineWork" element={<Radien />} />
           <Route path="/PersonalSite" element={<Radien />} />
-          <Route path="/AAR" element={<Radien />} />
+          <Route path="/AAR" element={<AAR />} />
           <Route path="/Medvault" element={<Radien />} />
           <Route path="/HackBeanpot" element={<Radien />} />
         </Routes>
@@ -39,9 +42,8 @@ function Home() {
       const id = location.hash.replace("#", "");
       const section = document.getElementById(id);
       if (section) {
-        // Slight timeout ensures the section is mounted
         setTimeout(() => {
-          section.scrollIntoView({ behavior: "smooth" });
+          section.scrollIntoView({ behavior: "auto" });
         }, 100);
       }
     }
