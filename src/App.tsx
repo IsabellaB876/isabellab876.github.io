@@ -10,6 +10,7 @@ import { Routes, Route } from "react-router";
 import { HashRouter } from "react-router-dom";
 import Radien from "./components/Radien";
 import AAR from "./components/AAR";
+import ZineWork from "./components/ZineWork";
 import AboutMe from "./components/AboutMe";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
@@ -23,7 +24,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/RadienTaskTracker" element={<Radien />} />
-          <Route path="/ZineWork" element={<Radien />} />
+          <Route path="/ZineWork" element={<ZineWork />} />
           <Route path="/PersonalSite" element={<Radien />} />
           <Route path="/AAR" element={<AAR />} />
           <Route path="/Medvault" element={<Radien />} />
