@@ -12,6 +12,7 @@ import Radien from "./components/Radien";
 import AAR from "./components/AAR";
 import ZineWork from "./components/ZineWork";
 import AboutMe from "./components/AboutMe";
+import Medvault from "./components/Medvault";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
@@ -27,7 +28,7 @@ function App() {
           <Route path="/ZineWork" element={<ZineWork />} />
           <Route path="/PersonalSite" element={<Radien />} />
           <Route path="/AAR" element={<AAR />} />
-          <Route path="/Medvault" element={<Radien />} />
+          <Route path="/Medvault" element={<Medvault />} />
           <Route path="/HackBeanpot" element={<Radien />} />
         </Routes>
       </div>
