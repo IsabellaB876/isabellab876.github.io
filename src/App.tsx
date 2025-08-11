@@ -13,6 +13,7 @@ import AAR from "./components/AAR";
 import ZineWork from "./components/ZineWork";
 import AboutMe from "./components/AboutMe";
 import Medvault from "./components/Medvault";
+import HackBeanpot from "./components/HackBeanpot";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
@@ -29,7 +30,7 @@ function App() {
           <Route path="/PersonalSite" element={<Radien />} />
           <Route path="/AAR" element={<AAR />} />
           <Route path="/Medvault" element={<Medvault />} />
-          <Route path="/HackBeanpot" element={<Radien />} />
+          <Route path="/HackBeanpot" element={<HackBeanpot />} />
         </Routes>
       </div>
     </HashRouter>
