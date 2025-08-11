@@ -2,9 +2,11 @@ import { Stack, Container, Image, Row, Col } from "react-bootstrap";
 import DesignValue from "./DesignValue";
 import NavBar from "./NavBar";
 import aarThumbnail from "../assets/AAR.png";
-import radien1 from "../assets/radien1.png";
-import radien2 from "../assets/radien2.png";
-import radien3 from "../assets/radien3.png";
+import wayfair1 from "../assets/aar/aarBefore.mp4";
+import wayfair2 from "../assets/aar/Wayfairdesign.png";
+import wayfair3 from "../assets/aar/Wayfairdev.png";
+import wayfair4 from "../assets/aar/aarAfter.mp4";
+import DevelopmentValue from "./DevelopmentValue";
 
 function AAR() {
   return (
@@ -23,14 +25,17 @@ function AAR() {
           >
             <h1>ADDRESS ATTRIBUTE REPOSITORY</h1>
             <p style={{ fontStyle: "italic", color: "#8888AC" }}>
-              June - August 2024
+              January - June 2025
             </p>
             <p>
-              A project manager emphasizing transparency and efficiency built
-              specifically for front-end developers. Developed for business,
-              Radien in the UX Design class
+              An internal Wayfair tool used for adding and viewing delivery
+              specifications to customer’s addresses developed over the course
+              of my SWE co-op.
             </p>
-            <DesignValue mode="color" />
+            <div className="flex">
+              <DesignValue mode="color" />
+              <DevelopmentValue mode="color" />
+            </div>
           </Col>
           <Col xs={12} md={6}>
             <Image src={aarThumbnail} alt="AAR prototype screen" fluid />
@@ -40,8 +45,8 @@ function AAR() {
           <Col xs={12} md={4}>
             <h2>THE PROBLEM</h2>
             <p>
-              Front-end software development lacks clear communication, causing
-              engineers and managers to be less efficient.
+              The existing AAR site has low adoption due to unfriendly UI and
+              disconnect from other delivery tools.
             </p>
           </Col>
           <Col xs={12} md={4}>
@@ -53,77 +58,93 @@ function AAR() {
           <Col xs={12} md={4} className="justify-content-center">
             <h2>THE SOLUTION</h2>
             <p>
-              An advanced ticketing platform enhancing transparency,
-              communication, and efficiency
+              Improve UI to match Wayfair Design System, consolidate fields,
+              move to internal delivery platform.
             </p>
           </Col>
         </Row>
         <Row xs={1} sm={2} lg={2} xl={2} className="g-4">
           <Col>
             <div className="align-items-center text-center w-auto">
-              <Image
-                src={radien1}
-                alt="illustration of the value"
-                fluid
-                className="align-self-center"
-              />
+              <div className="ratio ratio-16x9">
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  src={wayfair1}
+                  className="align-self-center ratio ratio-16x9"
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
               <h2>RESEARCH</h2>
               <p className="text-center m-0">
-                With a team of 3 other students, we interviewed 4 users of
-                Radien’s existing product. We determined that many front-end
-                developers and project managers struggle with communicating with
-                different teams.
+                I held multiple feedback sessions with the users, delivery
+                managers, on the previous site. With their help I identified
+                that the site was tedious to use because of the abundance of
+                questions, manual address input, and unappealing UI.
               </p>
             </div>
           </Col>
           <Col>
             <div className="align-items-center text-center w-auto">
-              <Image
-                src={radien2}
-                alt="illustration of the value"
-                fluid
-                className="align-self-center"
-              />
-              <h2>IDEATION</h2>
+              <div className="ratio ratio-16x9">
+                <Image
+                  src={wayfair2}
+                  alt="illustration of the value"
+                  className="w-100 h-100"
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
+              <h2>DESIGN</h2>
               <p className="text-center m-0">
-                We came up with 20 ideas for potential solutions, falling into
-                the identified categories for improvement, communication,
-                efficiency, and organization. We landed on an improved ticket
-                tracking system.
+                Getting critique from the Wayfair Delivery Network design and
+                operations team, I created a high fidelity mockup. I presented
+                this to the Scheduling and Routing tech team to begin planning
+                the systems design.
               </p>
             </div>
           </Col>
           <Col>
             <div className="align-items-center text-center w-auto">
-              <Image
-                src={radien3}
-                alt="illustration of the value"
-                fluid
-                className="align-self-center"
-              />
-              <h2>PROTOTYPE</h2>
+              <div className="ratio ratio-16x9">
+                <Image
+                  src={wayfair3}
+                  alt="illustration of the value"
+                  fluid
+                  className="align-self-center"
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
+              <h2>DEVELOPMENT</h2>
               <p className="text-center m-0">
-                Created a low fidelity prototype focusing on including as much
-                relevant ticket information as possible while still following
-                Radien’s minimalist existing design system. Developed user flow
-                for a more all encompassing ticket creating experience.
+                Created a V2 backend in Java, transitioning the site to use a
+                more flexible object for address data. On the front end I worked
+                with React.js, creating a flexible search bar to autocomplete
+                addresses and PO numbers, a drawer for easier time range input,
+                and updating the UI library.
               </p>
             </div>
           </Col>
           <Col>
             <div className="align-items-center text-center w-auto">
-              <Image
-                src={radien3}
-                alt="illustration of the value"
-                fluid
-                className="align-self-center"
-              />
+              <div className="ratio ratio-16x9">
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  src={wayfair4}
+                  className="align-self-center"
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
               <h2>FINAL</h2>
               <p className="text-center m-0">
-                Developed an interactive and high fidelity prototype on
-                prototype. Focuses on the user flows of viewing your ticket,
-                viewing other team’s tickets, creating tickets, and updating
-                ticket progress.
+                Once the standalone site was developed, I integrated it as a
+                microfrontend on 4sight, Wayfair’s internal delivery management
+                platform. I presented this to my tech team and operations,
+                receiving positive feedback.
               </p>
             </div>
           </Col>
@@ -132,10 +153,10 @@ function AAR() {
           <Col xs={12} md={4}>
             <h2>LEARNINGS</h2>
             <p>
-              Working with an established business was allowed us to fully
-              immerse ourselves in user research. Our interviews defined our
-              product, which taught me the importance of understanding your
-              users well.
+              In my time at Wayfair I had to constantly learn and adapt. With
+              the entire tech stack being new to me, I used strategies like
+              keeping a dictionary, taking notes, and writing my own
+              documentation to keep up with the fast pace.
             </p>
           </Col>
           <Col xs={12} md={4}>
@@ -147,14 +168,15 @@ function AAR() {
           <Col xs={12} md={4} className="justify-content-center">
             <h2>NEXT STEPS</h2>
             <p>
-              Given the chance to develop this further I would like to refine
-              the UI, particularly the home page’s drawers. I would also like to
-              conduct UAT, so that I could see the impact of the product.
+              If I could continue to work on this project I would like to do
+              more AB testing. The user research was extremely insightful, but I
+              did not get the chance to present the final product with the
+              actual users.
             </p>
           </Col>
         </Row>
         <div className="d-flex justify-content-end">
-          <a href="#/ZineWork">
+          <a href="#/PersonalSite">
             Next project <i className="bi bi-chevron-right"></i>
           </a>
         </div>

@@ -29,7 +29,7 @@ function Radien() {
             <p>
               A project manager emphasizing transparency and efficiency built
               specifically for front-end developers. Developed for business,
-              Radien in the UX Design class
+              Radien, in a UX Design class.
             </p>
             <DesignValue mode="color" />
           </Col>
@@ -59,7 +59,7 @@ function Radien() {
             <h2>THE SOLUTION</h2>
             <p>
               An advanced ticketing platform enhancing transparency,
-              communication, and efficiency
+              communication, and efficiency.
             </p>
           </Col>
         </Row>
@@ -168,7 +168,7 @@ function Radien() {
           </Col>
         </Row>
         <div className="d-flex justify-content-end">
-          <a href="#/ZineWork">
+          <a href="#/HackBeanpot">
             Next project <i className="bi bi-chevron-right"></i>
           </a>
         </div>
