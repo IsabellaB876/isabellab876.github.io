@@ -41,13 +41,13 @@ h2 {
 
 p {
   font-family: 'Albert Sans', sans-serif !important;
-  font-size: clamp(15px, 20px, 20px);
+  font-size: clamp(15px, 18px, 20px);
   color: #20204B;
 }
 
 .white-p {
   font-family: 'Albert Sans', sans-serif !important;
-  font-size: clamp(15px, 20px, 20px);
+  font-size: clamp(15px, 18px, 20px);
   color: #f9f5f2;
 }
 
