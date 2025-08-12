@@ -1,4 +1,4 @@
-import { Image, Stack } from "react-bootstrap";
+import { Image } from "react-bootstrap";
 import star from "../assets/star.svg";
 import starMono from "../assets/star-mono.svg";
 

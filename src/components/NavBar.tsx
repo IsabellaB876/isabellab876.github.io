@@ -1,4 +1,4 @@
-import { Container, Button, Image } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import logo from "../assets/logo.svg";
