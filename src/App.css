@@ -29,25 +29,25 @@ body, html {
 
 h1 {
   font-family: 'Lexend Giga', sans-serif !important;
-  font-size: clamp(30px, 67px, 67px);
+  font-size: clamp(30px, 5vw, 67px);
   color: #20204B;
 }
 
 h2 {
   font-family: 'Lexend Giga', sans-serif !important;
-  font-size: clamp(20px, 30px, 30px);
+  font-size: clamp(20px, 4vw, 30px);
   color: #20204B;
 }
 
 p {
   font-family: 'Albert Sans', sans-serif !important;
-  font-size: clamp(15px, 18px, 20px);
+  font-size: clamp(15px, 3vw, 18px);
   color: #20204B;
 }
 
 .white-p {
   font-family: 'Albert Sans', sans-serif !important;
-  font-size: clamp(15px, 18px, 20px);
+  font-size: clamp(15px, 3vw, 18px);
   color: #f9f5f2;
 }
 
