@@ -29,7 +29,7 @@ body, html {
 
 h1 {
   font-family: 'Lexend Giga', sans-serif !important;
-  font-size: clamp(35px, 67px, 67px);
+  font-size: clamp(30px, 67px, 67px);
   color: #20204B;
 }
 
