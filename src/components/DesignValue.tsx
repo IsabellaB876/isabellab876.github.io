@@ -10,7 +10,7 @@ function DesignValue({ mode }: ValueProps) {
   return mode === "color" ? (
     <div
       style={{ maxWidth: "160px" }}
-      className="inline-flex gap-3 design-value"
+      className="inline-flex gap-3 design-value value-icon"
     >
       <Image
         src={star}
@@ -21,7 +21,7 @@ function DesignValue({ mode }: ValueProps) {
       <p className="white-p mb-0 align-self-center">Design</p>
     </div>
   ) : (
-    <div className="inline-flex gap-3 mono">
+    <div className="inline-flex gap-3 mono value-icon">
       <Image
         src={starMono}
         alt="illustration of the value"

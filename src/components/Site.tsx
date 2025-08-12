@@ -156,7 +156,7 @@ function Site() {
           </Col>
         </Row>
         <div className="d-flex justify-content-end">
-          <a href="#/AAR">
+          <a href="#/ZineWork">
             Next project <i className="bi bi-chevron-right"></i>
           </a>
         </div>

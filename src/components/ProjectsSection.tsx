@@ -108,7 +108,7 @@ function ProjectsSection() {
     <Container id="projects-section">
       <Stack gap={4}>
         <h2>PROJECTS</h2>
-        <div className="d-flex align-items-center gap-4 flex-wrap">
+        <div className="d-flex align-items-center gap-2 gap-sm-3 gap-md-4 flex-wrap">
           <div>
             <p>Filter</p>
           </div>

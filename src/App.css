@@ -177,13 +177,24 @@ nav.navbar {
   display: flex !important;
 }
 
-/*.overlay-icon {
-  width: 35px;
-  height: 35px;
-}*/
-
 a {
   font-family: 'Albert Sans', sans-serif !important;
   font-size: 20px;
   color: #20204B;
+}
+
+.value-icon img {
+  max-width: 50px; /* default size */
+}
+
+@media (max-width: 768px) { /* tablets */
+  .value-icon img {
+    max-width: 30px;
+  }
+}
+
+@media (max-width: 576px) { /* phones */
+  .value-icon img {
+    max-width: 20px;
+  }
 }

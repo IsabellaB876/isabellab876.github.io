@@ -8,7 +8,11 @@ interface ValueProps {
 
 function IllustrationValue({ mode }: ValueProps) {
   return mode === "color" ? (
-    <Stack direction="horizontal" gap={3} className="illustration-value">
+    <Stack
+      direction="horizontal"
+      gap={3}
+      className="illustration-value value-icon"
+    >
       <Image
         src={circle}
         alt="illustration of the value"
@@ -18,7 +22,7 @@ function IllustrationValue({ mode }: ValueProps) {
       <p className="white-p mb-0 align-self-center">Illustration</p>
     </Stack>
   ) : (
-    <div className="inline-flex gap-3 mono">
+    <div className="inline-flex gap-3 mono value-icon">
       <Image
         src={circleMono}
         alt="illustration of the value"
