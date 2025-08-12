@@ -1,4 +1,4 @@
-import { Stack } from "react-bootstrap";
+import { Stack, Container } from "react-bootstrap";
 import NavBar from "./components/NavBar";
 import Banner from "./components/Banner";
 import ValuesSection from "./components/ValuesSection";
@@ -54,37 +54,39 @@ function Home() {
   }, [location]);
 
   return (
-    <Stack
-      className="align-items-center"
-      style={{ gap: "4rem", marginBottom: "4rem" }}
-    >
-      <NavBar />
-      <Banner />
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
-        viewport={{ once: true }}
+    <Container>
+      <Stack
+        className="align-items-center"
+        style={{ gap: "4rem", marginBottom: "4rem" }}
       >
-        <ValuesSection />
-      </motion.div>
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
-        viewport={{ once: true }}
-      >
-        <ProjectsSection />
-      </motion.div>
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
-        viewport={{ once: true }}
-      >
-        <AboutMe />
-      </motion.div>
-    </Stack>
+        <NavBar />
+        <Banner />
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          viewport={{ once: true }}
+        >
+          <ValuesSection />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          viewport={{ once: true }}
+        >
+          <ProjectsSection />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          viewport={{ once: true }}
+        >
+          <AboutMe />
+        </motion.div>
+      </Stack>
+    </Container>
   );
 }
 
