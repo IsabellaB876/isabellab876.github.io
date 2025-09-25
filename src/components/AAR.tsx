@@ -5,7 +5,7 @@ import aarThumbnail from "../assets/AAR.png";
 import wayfair1 from "../assets/aar/aarBefore.mp4";
 import wayfair2 from "../assets/aar/Wayfairdesign.png";
 import wayfair3 from "../assets/aar/Wayfairdev.png";
-import wayfair4 from "../assets/aar/aarAfter.mp4";
+import wayfair4 from "../assets/newAAR.mp4";
 import DevelopmentValue from "./DevelopmentValue";
 
 function AAR() {
