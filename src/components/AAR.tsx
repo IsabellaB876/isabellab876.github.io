@@ -63,90 +63,107 @@ function AAR() {
             </p>
           </Col>
         </Row>
-        <Row xs={1} sm={2} lg={2} xl={2} className="g-4">
-          <Col>
-            <div className="align-items-center text-center w-auto">
-              <div className="ratio ratio-16x9">
-                <video
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  src={wayfair1}
-                  className="align-self-center ratio ratio-16x9"
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
-              <h2>RESEARCH</h2>
-              <p className="text-center m-0">
-                I held multiple feedback sessions with the users, delivery
-                managers, on the previous site. With their help I identified
-                that the site was tedious to use because of the abundance of
-                questions, manual address input, and unappealing UI.
-              </p>
-            </div>
+        <Row className="g-4">
+          <Col xs={12}>
+            <Row className="project-detail-item g-3 align-items-center">
+              <Col xs={12} md={5} className="project-detail-media">
+                <div className="ratio ratio-16x9 w-100">
+                  <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    src={wayfair1}
+                    className="align-self-center ratio ratio-16x9"
+                    style={{ objectFit: "cover" }}
+                  />
+                </div>
+              </Col>
+              <Col xs={12} md={7} className="project-detail-copy">
+                <h2>RESEARCH</h2>
+                <p className="m-0">
+                  I held multiple feedback sessions with the users, delivery
+                  managers, and developers using and working on the previous
+                  site. With their help I identified that the site was tedious
+                  to use because of the abundance of questions, manual address
+                  input, and unappealing UI. Pictured was the previous site UI.
+                </p>
+              </Col>
+            </Row>
+          </Col>
+          <Col xs={12}>
+            <Row className="project-detail-item g-3 align-items-center">
+              <Col xs={12} md={5} className="project-detail-media">
+                <div className="ratio ratio-16x9 w-100">
+                  <Image
+                    src={wayfair2}
+                    alt="illustration of the value"
+                    className="w-100 h-100"
+                    style={{ objectFit: "cover" }}
+                  />
+                </div>
+              </Col>
+              <Col xs={12} md={7} className="project-detail-copy">
+                <h2>DESIGN</h2>
+                <p className="m-0">
+                  Getting critique from the Wayfair Delivery Network design and
+                  operations team, I created a high fidelity mockup. I presented
+                  this to the Scheduling and Routing tech team to begin planning
+                  the systems design.
+                </p>
+              </Col>
+            </Row>
+          </Col>
+          <Col xs={12}>
+            <Row className="project-detail-item g-3 align-items-center">
+              <Col xs={12} md={5} className="project-detail-media">
+                <div className="ratio ratio-16x9 w-100">
+                  <Image
+                    src={wayfair3}
+                    alt="illustration of the value"
+                    fluid
+                    className="align-self-center"
+                    style={{ objectFit: "cover" }}
+                  />
+                </div>
+              </Col>
+              <Col xs={12} md={7} className="project-detail-copy">
+                <h2>DEVELOPMENT</h2>
+                <p className="m-0">
+                  I created a V2 backend in Java, transitioning the site to use
+                  a more flexible object for address data. On the front end I
+                  worked with React.js, creating a reactive search bar to
+                  autocomplete addresses and PO numbers, a drawer for easier
+                  time range input, and updating the UI library.
+                </p>
+              </Col>
+            </Row>
           </Col>
           <Col>
-            <div className="align-items-center text-center w-auto">
-              <div className="ratio ratio-16x9">
-                <Image
-                  src={wayfair2}
-                  alt="illustration of the value"
-                  className="w-100 h-100"
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
-              <h2>DESIGN</h2>
-              <p className="text-center m-0">
-                Getting critique from the Wayfair Delivery Network design and
-                operations team, I created a high fidelity mockup. I presented
-                this to the Scheduling and Routing tech team to begin planning
-                the systems design.
-              </p>
-            </div>
-          </Col>
-          <Col>
-            <div className="align-items-center text-center w-auto">
-              <div className="ratio ratio-16x9">
-                <Image
-                  src={wayfair3}
-                  alt="illustration of the value"
-                  fluid
-                  className="align-self-center"
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
-              <h2>DEVELOPMENT</h2>
-              <p className="text-center m-0">
-                Created a V2 backend in Java, transitioning the site to use a
-                more flexible object for address data. On the front end I worked
-                with React.js, creating a flexible search bar to autocomplete
-                addresses and PO numbers, a drawer for easier time range input,
-                and updating the UI library.
-              </p>
-            </div>
-          </Col>
-          <Col>
-            <div className="align-items-center text-center w-auto">
-              <div className="ratio ratio-16x9">
-                <video
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  src={wayfair4}
-                  className="align-self-center"
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
-              <h2>FINAL</h2>
-              <p className="text-center m-0">
-                Once the standalone site was developed, I integrated it as a
-                microfrontend on 4sight, Wayfair’s internal delivery management
-                platform. I presented this to my tech team and operations,
-                receiving positive feedback.
-              </p>
-            </div>
+            <Row className="project-detail-item g-3 align-items-center">
+              <Col xs={12} md={5} className="project-detail-media">
+                <div className="ratio ratio-16x9 w-100">
+                  <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    src={wayfair4}
+                    className="align-self-center"
+                    style={{ objectFit: "cover" }}
+                  />
+                </div>
+              </Col>
+              <Col xs={12} md={7} className="project-detail-copy">
+                <h2>FINAL</h2>
+                <p className="m-0">
+                  Once the standalone site was developed, I integrated it as a
+                  microfrontend on 4sight, Wayfair’s internal delivery
+                  management platform. I presented this to my tech team and
+                  operations, receiving positive feedback.
+                </p>
+              </Col>
+            </Row>
           </Col>
         </Row>
         <Row className="d-flex align-items-bottom">

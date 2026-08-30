@@ -46,89 +46,105 @@ function Site() {
             />
           </Col>
         </Row>
-        <Row xs={1} sm={2} lg={2} xl={2} className="g-4">
-          <Col>
-            <div className="align-items-center text-center w-auto">
-              <div className="ratio ratio-16x9">
-                <Image
-                  src={site1}
-                  alt="illustration of the value"
-                  className="w-100 h-100"
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
-              <h2>MY START (2022)</h2>
-              <p className="text-center m-0">
-                My first exposure to web development was through Girl Who Code’s
-                Summer Immersion Program. An assignment during this course was
-                to create a personal site using HTML and CSS.
-              </p>
-            </div>
+        <Row className="g-4">
+          <Col xs={12}>
+            <Row className="project-detail-item g-3 align-items-center">
+              <Col xs={12} md={5} className="project-detail-media">
+                <div className="ratio ratio-16x9 w-100">
+                  <Image
+                    src={site1}
+                    alt="illustration of the value"
+                    className="w-100 h-100"
+                    style={{ objectFit: "cover" }}
+                  />
+                </div>
+              </Col>
+              <Col xs={12} md={7} className="project-detail-copy">
+                <h2>MY START (2022)</h2>
+                <p className="m-0">
+                  My first exposure to web development was through Girl Who
+                  Code’s Summer Immersion Program. An assignment during this
+                  course was to create a personal site using HTML and CSS.
+                </p>
+              </Col>
+            </Row>
           </Col>
-          <Col>
-            <div className="align-items-center text-center w-auto">
-              <div className="ratio ratio-16x9">
-                <Image
-                  src={site2}
-                  alt="illustration of the value"
-                  className="w-100 h-100"
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
-              <h2>VERSION 1 (2023)</h2>
-              <p className="text-center m-0">
-                Created for college admissions, I applied my learning from GWC
-                SIP to this site hosted on Replit. I tried to focus more on
-                design and showcase my impact within my community.
-                <br></br>
-                (The actual site was unfortunately removed from Replit, shown is
-                an original thumbnail sketch)
-              </p>
-            </div>
+          <Col xs={12}>
+            <Row className="project-detail-item g-3 align-items-center">
+              <Col xs={12} md={5} className="project-detail-media">
+                <div className="ratio ratio-16x9 w-100">
+                  <Image
+                    src={site2}
+                    alt="illustration of the value"
+                    className="w-100 h-100"
+                    style={{ objectFit: "cover" }}
+                  />
+                </div>
+              </Col>
+              <Col xs={12} md={7} className="project-detail-copy">
+                <h2>VERSION 1 (2023)</h2>
+                <p className="m-0">
+                  Created for college admissions, I applied my learning from GWC
+                  SIP to this site hosted on Replit. I tried to focus more on
+                  design and showcase my impact within my community.
+                  <br></br>
+                  (The actual site was unfortunately removed from Replit, shown
+                  is an original thumbnail sketch)
+                </p>
+              </Col>
+            </Row>
           </Col>
-          <Col>
-            <div className="align-items-center text-center w-auto">
-              <div className="ratio ratio-16x9">
-                <Image
-                  src={site3}
-                  alt="illustration of the value"
-                  fluid
-                  className="align-self-center"
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
-              <h2>VERSION 2 (2024)</h2>
-              <p className="text-center m-0">
-                After I finished my first year of college, my personal website
-                did not reflect my improved design and technical skills, as well
-                as my personal style. I chose a color palette reflecting my love
-                for color theory as well as my Colombian heritage, and I
-                included illustrations to show my creative side. I created this
-                site using HTML, CSS, and Javascript and hosted it using GitHub
-                pages.
-              </p>
-            </div>
+          <Col xs={12}>
+            <Row className="project-detail-item g-3 align-items-center">
+              <Col xs={12} md={5} className="project-detail-media">
+                <div className="ratio ratio-16x9 w-100">
+                  <Image
+                    src={site3}
+                    alt="illustration of the value"
+                    fluid
+                    className="align-self-center"
+                    style={{ objectFit: "cover" }}
+                  />
+                </div>
+              </Col>
+              <Col xs={12} md={7} className="project-detail-copy">
+                <h2>VERSION 2 (2024)</h2>
+                <p className="m-0">
+                  After I finished my first year of college, my personal website
+                  did not reflect my improved design and technical skills, as
+                  well as my personal style. I chose a color palette reflecting
+                  my love for color theory as well as my Colombian heritage, and
+                  I included illustrations to show my creative side. I created
+                  this site using HTML, CSS, and Javascript and hosted it using
+                  GitHub pages.
+                </p>
+              </Col>
+            </Row>
           </Col>
-          <Col>
-            <div className="align-items-center text-center w-auto">
-              <div className="ratio ratio-16x9">
-                <Image
-                  src={site4}
-                  alt="illustration of the value"
-                  className="w-100 h-100"
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
-              <h2>VERSION 3: CURRENT (2025)</h2>
-              <p className="text-center m-0">
-                After my first internship, I had again learned so much that my
-                site felt outdated. In this iteration I chose to continue with
-                the same basic color palette and fonts as Version 2, but
-                enhanced the layout to be more professional and informative and
-                focused on my interdisciplinary studies. This website was
-                created using React.js and hosted on GitHub pages.
-              </p>
-            </div>
+          <Col xs={12}>
+            <Row className="project-detail-item g-3 align-items-center">
+              <Col xs={12} md={5} className="project-detail-media">
+                <div className="ratio ratio-16x9 w-100">
+                  <Image
+                    src={site4}
+                    alt="illustration of the value"
+                    className="w-100 h-100"
+                    style={{ objectFit: "cover" }}
+                  />
+                </div>
+              </Col>
+              <Col xs={12} md={7} className="project-detail-copy">
+                <h2>VERSION 3: CURRENT (2025)</h2>
+                <p className="m-0">
+                  After my first internship, I had again learned so much that my
+                  site felt outdated. In this iteration I chose to continue with
+                  the same basic color palette and fonts as Version 2, but
+                  enhanced the layout to be more professional and informative
+                  and focused on my interdisciplinary studies. This website was
+                  created using React.js and hosted on GitHub pages.
+                </p>
+              </Col>
+            </Row>
           </Col>
         </Row>
         <Row className="d-flex align-items-bottom">

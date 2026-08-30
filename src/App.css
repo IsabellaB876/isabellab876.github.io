@@ -140,6 +140,34 @@ nav.navbar {
   padding: 1rem;
 }
 
+.project-detail-item {
+  min-height: 100%;
+  align-items: center;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.project-detail-media {
+  display: flex;
+  align-items: center;
+}
+
+.g-4 {
+  --bs-gutter-y: 3rem;
+  --bs-gutter-x: 4rem;
+}
+
+.project-detail-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.project-detail-copy h2 {
+  margin-bottom: 0.5rem;
+}
+
 .image-wrapper {
   position: relative;
   width: 100%;

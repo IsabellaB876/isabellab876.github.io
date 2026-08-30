@@ -62,87 +62,103 @@ function Medvault() {
             </p>
           </Col>
         </Row>
-        <Row xs={1} sm={2} lg={2} xl={2} className="g-4">
-          <Col>
-            <div className="align-items-center text-center w-auto">
-              <div className="ratio ratio-16x9">
-                <Image
-                  src={medvault1}
-                  alt="illustration of the value"
-                  className="w-100 h-100"
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
-              <h2>RESEARCH</h2>
-              <p className="text-center m-0">
-                At the small, 8 hour hackathon, VitalHacks, I teamed up with a
-                group of 3 other hackers to create a digital tool to help the
-                medical space. We landed on Medvault, a secure file requesting
-                platform.
-              </p>
-            </div>
+        <Row className="g-4">
+          <Col xs={12}>
+            <Row className="project-detail-item g-3 align-items-center">
+              <Col xs={12} md={5} className="project-detail-media">
+                <div className="ratio ratio-16x9 w-100">
+                  <Image
+                    src={medvault1}
+                    alt="illustration of the value"
+                    className="w-100 h-100"
+                    style={{ objectFit: "cover" }}
+                  />
+                </div>
+              </Col>
+              <Col xs={12} md={7} className="project-detail-copy">
+                <h2>RESEARCH</h2>
+                <p className="m-0">
+                  At the small, 8 hour hackathon, VitalHacks, I teamed up with a
+                  group of 3 other hackers to create a digital tool to help the
+                  medical space. We landed on Medvault, a secure file requesting
+                  platform.
+                </p>
+              </Col>
+            </Row>
           </Col>
-          <Col>
-            <div className="align-items-center text-center w-auto">
-              <div className="ratio ratio-16x9">
-                <Image
-                  src={medvault2}
-                  alt="illustration of the value"
-                  className="w-100 h-100"
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
-              <h2>DESIGN</h2>
-              <p className="text-center m-0">
-                I created the design for Medvault using Figma, focusing on the
-                patient user flow of requesting a document, as well as defining
-                our design system. We decided to continue to develop this
-                project past the duration of the hackathon.
-              </p>
-            </div>
+          <Col xs={12}>
+            <Row className="project-detail-item g-3 align-items-center">
+              <Col xs={12} md={5} className="project-detail-media">
+                <div className="ratio ratio-16x9 w-100">
+                  <Image
+                    src={medvault2}
+                    alt="illustration of the value"
+                    className="w-100 h-100"
+                    style={{ objectFit: "cover" }}
+                  />
+                </div>
+              </Col>
+              <Col xs={12} md={7} className="project-detail-copy">
+                <h2>DESIGN</h2>
+                <p className="m-0">
+                  I created the design for Medvault using Figma, focusing on the
+                  patient user flow of requesting a document, as well as
+                  defining our design system. We decided to continue to develop
+                  this project past the duration of the hackathon.
+                </p>
+              </Col>
+            </Row>
           </Col>
-          <Col>
-            <div className="align-items-center text-center w-auto">
-              <div className="ratio ratio-16x9">
-                <Image
-                  src={medvault3}
-                  alt="illustration of the value"
-                  fluid
-                  className="align-self-center"
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
-              <h2>DEVELOPMENT</h2>
-              <p className="text-center m-0">
-                As group leader, I managed our roles and tasks, as we split our
-                focuses to front or backend dev. I created all frontend services
-                and developed the login, signup, and profile pages.
-              </p>
-            </div>
+          <Col xs={12}>
+            <Row className="project-detail-item g-3 align-items-center">
+              <Col xs={12} md={5} className="project-detail-media">
+                <div className="ratio ratio-16x9 w-100">
+                  <Image
+                    src={medvault3}
+                    alt="illustration of the value"
+                    fluid
+                    className="align-self-center"
+                    style={{ objectFit: "cover" }}
+                  />
+                </div>
+              </Col>
+              <Col xs={12} md={7} className="project-detail-copy">
+                <h2>DEVELOPMENT</h2>
+                <p className="m-0">
+                  As group leader, I managed our roles and tasks, as we split
+                  our focuses to front or backend dev. I created all frontend
+                  services and developed the login, signup, and profile pages.
+                </p>
+              </Col>
+            </Row>
           </Col>
-          <Col>
-            <div className="align-items-center text-center w-auto">
-              <div className="ratio ratio-16x9">
-                <Image
-                  src={medvault4}
-                  alt="illustration of the value"
-                  className="w-100 h-100"
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
-              <h2>FINAL</h2>
-              <p className="text-center m-0">
-                Currently, we are on the final phase of development, cleaning up
-                styling and optimizing endpoints. Check back later to see the
-                final video demo, or see our progress on{" "}
-                <a
-                  href="https://github.com/IsabellaB876/vital-hacks"
-                  style={{ textDecoration: "underline" }}
-                >
-                  GitHub
-                </a>
-              </p>
-            </div>
+          <Col xs={12}>
+            <Row className="project-detail-item g-3 align-items-center">
+              <Col xs={12} md={5} className="project-detail-media">
+                <div className="ratio ratio-16x9 w-100">
+                  <Image
+                    src={medvault4}
+                    alt="illustration of the value"
+                    className="w-100 h-100"
+                    style={{ objectFit: "cover" }}
+                  />
+                </div>
+              </Col>
+              <Col xs={12} md={7} className="project-detail-copy">
+                <h2>FINAL</h2>
+                <p className="m-0">
+                  Currently, we are on the final phase of development, cleaning
+                  up styling and optimizing endpoints. Check back later to see
+                  the final video demo, or see our progress on{" "}
+                  <a
+                    href="https://github.com/IsabellaB876/vital-hacks"
+                    style={{ textDecoration: "underline" }}
+                  >
+                    GitHub
+                  </a>
+                </p>
+              </Col>
+            </Row>
           </Col>
         </Row>
         <Row className="d-flex align-items-bottom">

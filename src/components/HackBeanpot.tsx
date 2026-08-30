@@ -44,86 +44,103 @@ function HackBeanpot() {
             />
           </Col>
         </Row>
-        <Row xs={1} sm={2} lg={2} xl={2} className="g-4">
-          <Col>
-            <div className="align-items-center text-center w-auto">
-              <div className="ratio ratio-16x9">
-                <Image
-                  src={hbp1}
-                  alt="illustration of the value"
-                  className="w-100 h-100"
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
-              <h2>DESIGN X S&O</h2>
-              <p className="text-center m-0">
-                Collaborated with the Social and Outreach team to design 20+
-                social media posts using Figma. Created slide deck and hackathon
-                signage.
-              </p>
-            </div>
+        <Row className="g-4">
+          <Col xs={12}>
+            <Row className="project-detail-item g-3 align-items-center">
+              <Col xs={12} md={5} className="project-detail-media">
+                <div className="ratio ratio-16x9 w-100">
+                  <Image
+                    src={hbp1}
+                    alt="illustration of the value"
+                    className="w-100 h-100"
+                    style={{ objectFit: "cover" }}
+                  />
+                </div>
+              </Col>
+              <Col xs={12} md={7} className="project-detail-copy">
+                <h2>DESIGN X S&O</h2>
+                <p className="m-0">
+                  Collaborated with the Social and Outreach team to design 20+
+                  social media posts using Figma. Created slide deck and
+                  hackathon signage.
+                </p>
+              </Col>
+            </Row>
           </Col>
-          <Col>
-            <div className="align-items-center text-center w-auto">
-              <div className="ratio ratio-16x9">
-                <Image
-                  src={hbp2}
-                  alt="illustration of the value"
-                  className="w-100 h-100"
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
-              <h2>DESIGN X TECH</h2>
-              <p className="text-center m-0">
-                My current role on the design team. Designed the first
-                HackBeanpot placeholder site, and am collaborating on the main
-                site. Engage on weekly meetings receiving and giving feedback on
-                our work.
-              </p>
-              <a
-                href="https://www.hackbeanpot.com/"
-                style={{ textDecoration: "underline" }}
-              >
-                Site
-              </a>
-            </div>
+          <Col xs={12}>
+            <Row className="project-detail-item g-3 align-items-center">
+              <Col xs={12} md={5} className="project-detail-media">
+                <div className="ratio ratio-16x9 w-100">
+                  <Image
+                    src={hbp2}
+                    alt="illustration of the value"
+                    className="w-100 h-100"
+                    style={{ objectFit: "cover" }}
+                  />
+                </div>
+              </Col>
+              <Col xs={12} md={7} className="project-detail-copy">
+                <h2>DESIGN X TECH</h2>
+                <p className="m-0">
+                  My current role on the design team. Designed the first
+                  HackBeanpot placeholder site, and am collaborating on the main
+                  site. Engage on weekly meetings receiving and giving feedback
+                  on our work.
+                </p>
+                <a
+                  href="https://www.hackbeanpot.com/"
+                  style={{ textDecoration: "underline" }}
+                >
+                  Site
+                </a>
+              </Col>
+            </Row>
           </Col>
-          <Col>
-            <div className="align-items-center text-center w-auto">
-              <div className="ratio ratio-16x9">
-                <Image
-                  src={hbp3}
-                  alt="illustration of the value"
-                  fluid
-                  className="align-self-center"
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
-              <h2>DESIGN SYSTEM</h2>
-              <p className="text-center m-0">
-                 Built expansive design system to reflect annual theme,
-                including deciding color palette, creating vectors, and
-                selecting fonts.
-              </p>
-            </div>
+          <Col xs={12}>
+            <Row className="project-detail-item g-3 align-items-center">
+              <Col xs={12} md={5} className="project-detail-media">
+                <div className="ratio ratio-16x9 w-100">
+                  <Image
+                    src={hbp3}
+                    alt="illustration of the value"
+                    fluid
+                    className="align-self-center"
+                    style={{ objectFit: "cover" }}
+                  />
+                </div>
+              </Col>
+              <Col xs={12} md={7} className="project-detail-copy">
+                <h2>DESIGN SYSTEM</h2>
+                <p className="m-0">
+                   Built expansive design system to reflect annual theme,
+                  including deciding color palette, creating vectors, and
+                  selecting fonts.
+                </p>
+              </Col>
+            </Row>
           </Col>
-          <Col>
-            <div className="align-items-center text-center w-auto">
-              <div className="ratio ratio-16x9">
-                <Image
-                  src={hbp4}
-                  alt="illustration of the value"
-                  className="w-100 h-100"
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
-              <h2>EVENT</h2>
-              <p className="text-center m-0">
-                What I love most about HackBeanpot are the people! This shines
-                most in the day of event, as we host and manage activities with
-                my fellow core members to contribute to a successful hackathon.
-              </p>
-            </div>
+          <Col xs={12}>
+            <Row className="project-detail-item g-3 align-items-center">
+              <Col xs={12} md={5} className="project-detail-media">
+                <div className="ratio ratio-16x9 w-100">
+                  <Image
+                    src={hbp4}
+                    alt="illustration of the value"
+                    className="w-100 h-100"
+                    style={{ objectFit: "cover" }}
+                  />
+                </div>
+              </Col>
+              <Col xs={12} md={7} className="project-detail-copy">
+                <h2>EVENT</h2>
+                <p className="m-0">
+                  What I love most about HackBeanpot are the people! This shines
+                  most in the day of event, as we host and manage activities
+                  with my fellow core members to contribute to a successful
+                  hackathon.
+                </p>
+              </Col>
+            </Row>
           </Col>
         </Row>
         <Row className="d-flex align-items-bottom">

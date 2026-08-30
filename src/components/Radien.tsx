@@ -63,83 +63,99 @@ function Radien() {
             </p>
           </Col>
         </Row>
-        <Row xs={1} sm={2} lg={2} xl={2} className="g-4">
-          <Col>
-            <div className="align-items-center text-center w-auto">
-              <Image
-                src={radien1}
-                alt="illustration of the value"
-                fluid
-                className="align-self-center"
-              />
-              <h2>RESEARCH</h2>
-              <p className="text-center m-0">
-                With a team of 3 other students, we interviewed 4 users of
-                Radien’s existing product. We determined that many front-end
-                developers and project managers struggle with communicating with
-                different teams.
-              </p>
-            </div>
+        <Row className="g-4">
+          <Col xs={12}>
+            <Row className="project-detail-item g-3 align-items-center">
+              <Col xs={12} md={5} className="project-detail-media">
+                <Image
+                  src={radien1}
+                  alt="illustration of the value"
+                  fluid
+                  className="align-self-center"
+                />
+              </Col>
+              <Col xs={12} md={7} className="project-detail-copy">
+                <h2>RESEARCH</h2>
+                <p className="m-0">
+                  With a team of 3 other students, we interviewed 4 users of
+                  Radien’s existing product. We determined that many front-end
+                  developers and project managers struggle with communicating
+                  with different teams.
+                </p>
+              </Col>
+            </Row>
           </Col>
-          <Col>
-            <div className="align-items-center text-center w-auto">
-              <Image
-                src={radien2}
-                alt="illustration of the value"
-                fluid
-                className="align-self-center"
-              />
-              <h2>IDEATION</h2>
-              <p className="text-center m-0">
-                We came up with 20 ideas for potential solutions, falling into
-                the identified categories for improvement, communication,
-                efficiency, and organization. We landed on an improved ticket
-                tracking system.
-              </p>
-            </div>
+          <Col xs={12}>
+            <Row className="project-detail-item g-3 align-items-center">
+              <Col xs={12} md={5} className="project-detail-media">
+                <Image
+                  src={radien2}
+                  alt="illustration of the value"
+                  fluid
+                  className="align-self-center"
+                />
+              </Col>
+              <Col xs={12} md={7} className="project-detail-copy">
+                <h2>IDEATION</h2>
+                <p className="m-0">
+                  We came up with 20 ideas for potential solutions, falling into
+                  the identified categories for improvement, communication,
+                  efficiency, and organization. We landed on an improved ticket
+                  tracking system.
+                </p>
+              </Col>
+            </Row>
           </Col>
-          <Col>
-            <div className="align-items-center text-center w-auto">
-              <Image
-                src={radien3}
-                alt="illustration of the value"
-                fluid
-                className="align-self-center"
-              />
-              <h2>PROTOTYPE</h2>
-              <p className="text-center m-0">
-                Created a low fidelity prototype focusing on including as much
-                relevant ticket information as possible while still following
-                Radien’s minimalist existing design system. Developed user flow
-                for a more all encompassing ticket creating experience.
-              </p>
-            </div>
+          <Col xs={12}>
+            <Row className="project-detail-item g-3 align-items-center">
+              <Col xs={12} md={5} className="project-detail-media">
+                <Image
+                  src={radien3}
+                  alt="illustration of the value"
+                  fluid
+                  className="align-self-center"
+                />
+              </Col>
+              <Col xs={12} md={7} className="project-detail-copy">
+                <h2>PROTOTYPE</h2>
+                <p className="m-0">
+                  Created a low fidelity prototype focusing on including as much
+                  relevant ticket information as possible while still following
+                  Radien’s minimalist existing design system. Developed user
+                  flow for a more all encompassing ticket creating experience.
+                </p>
+              </Col>
+            </Row>
           </Col>
-          <Col>
-            <div className="align-items-center text-center w-auto">
-              <video
-                autoPlay
-                loop
-                muted
-                playsInline
-                src={radien4}
-                className="align-self-center"
-              />
-              <h2>FINAL</h2>
-              <p className="text-center m-0">
-                Developed an interactive and high fidelity prototype on
-                prototype. Focuses on the user flows of viewing your ticket,
-                viewing other team’s tickets, creating tickets, and updating
-                ticket progress.
-                <br></br>
-                <a
-                  href="https://www.figma.com/proto/6OkQ8JdI5pncQ84Mfa81vx/Radien-P3?node-id=122-452&t=yKTQySW61QkQQi8x-1&starting-point-node-id=122%3A452"
-                  style={{ textDecoration: "underline" }}
-                >
-                  Figma
-                </a>
-              </p>
-            </div>
+          <Col xs={12}>
+            <Row className="project-detail-item g-3 align-items-center">
+              <Col xs={12} md={5} className="project-detail-media">
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  src={radien4}
+                  className="align-self-center"
+                />
+              </Col>
+              <Col xs={12} md={7} className="project-detail-copy">
+                <h2>FINAL</h2>
+                <p className="m-0">
+                  Developed an interactive and high fidelity prototype on
+                  prototype. Focuses on the user flows of viewing your ticket,
+                  viewing other team’s tickets, creating tickets, and updating
+                  ticket progress.
+                  <br></br>
+                  <a
+                    href="https://www.figma.com/proto/6OkQ8JdI5pncQ84Mfa81vx/Radien-P3?node-id=122-452&t=yKTQySW61QkQQi8x-1&starting-point-node-id=122%3A452"
+                    style={{ textDecoration: "underline" }}
+                  >
+                    Figma
+                  </a>
+                </p>
+              </Col>
+            </Row>
           </Col>
         </Row>
         <Row className="d-flex align-items-bottom">
