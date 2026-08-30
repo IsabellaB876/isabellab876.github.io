@@ -21,7 +21,7 @@ function AboutMe() {
             <h2>ABOUT ME</h2>
             <br></br>
             <p>
-              Hey, I’m Isabella! I’m a third year Honors CS and Design Student
+              Hey, I’m Isabella! I’m a fourth year Honors CS and Design Student
               at Northeastern University. I’m particularly interested in
               software development and interaction design. In the future I hope
               to be a software developer or UI designer. I’m motivated by my
@@ -32,7 +32,7 @@ function AboutMe() {
             <br></br>
             <Stack direction="horizontal" gap={4}>
               <a
-                href="https://drive.google.com/file/d/1IqojyWHleuzRO6XMD5Wjgb3H7EgXvPTZ/view?usp=sharing"
+                href="https://drive.google.com/file/d/1iWDgjSQ_FsVQgWKdPiRLWqmQ0DiYWDKO/view?usp=sharing"
                 style={{ textDecoration: "underline" }}
               >
                 Resume

@@ -2,10 +2,11 @@ import { Stack, Container, Image, Row, Col } from "react-bootstrap";
 import IllustrationValue from "./IllustrationValue";
 import NavBar from "./NavBar";
 import aarThumbnail from "../assets/Zines.png";
-import zines1 from "../assets/comingSoon.png";
+import zines1 from "../assets/zines/IMG_0706.png";
 import zines2 from "../assets/zines/anarchy.png";
 import zines3 from "../assets/zines/HunterxStellar.png";
 import zines4 from "../assets/zines/p4d.png";
+import zines5 from "../assets/zines/Screenshot 2026-08-30 170454.png";
 
 function ZineWork() {
   return (
@@ -44,10 +45,34 @@ function ZineWork() {
               <Col xs={12} md={5} className="project-detail-media">
                 <div className="ratio ratio-16x9 w-100">
                   <Image
+                    src={zines5}
+                    alt="Snowed In & Sunny Days zines"
+                    className="w-100 h-100"
+                    style={{ objectFit: "cover" }}
+                  />
+                </div>
+              </Col>
+              <Col xs={12} md={7} className="project-detail-copy">
+                <h2>SNOWED IN & SUNNY DAYS (2026)</h2>
+                <p className="m-0">
+                  I independently managed 25 artists to create and publish two
+                  collaborative art booklets, Snowed In and Sunny Days, in under
+                  3 months, overseeing recruitment, communication, deadlines,
+                  formatting, printing, and distributing 100+ copies to
+                  Northeastern Digital Illustration Association club members.
+                </p>
+              </Col>
+            </Row>
+          </Col>
+          <Col xs={12}>
+            <Row className="project-detail-item g-3 align-items-center">
+              <Col xs={12} md={5} className="project-detail-media">
+                <div className="ratio ratio-16x9 w-100">
+                  <Image
                     src={zines1}
                     alt="illustration of the value"
                     className="w-100 h-100"
-                    style={{ objectFit: "cover" }}
+                    style={{ objectFit: "cover", objectPosition: "center 30%" }}
                   />
                 </div>
               </Col>
@@ -149,10 +174,12 @@ function ZineWork() {
           <Col xs={12} md={4}>
             <h2>LEARNINGS</h2>
             <p>
-              Working with and for fans has taught me the importance of
-              community and passion. These have both become essential for me to
-              excel at work, and are something that I actively search for
-              whenever approaching a new situation.
+              Contributing to and managing collaborative zine projects has
+              taught me the importance of community, leadership, and
+              coordination at scale. From recruitment to distribution, I've
+              learned how to motivate diverse teams and execute ambitious
+              timelines. These skills have become essential for my work and
+              growth.
             </p>
           </Col>
           <Col xs={12} md={4}>
@@ -164,9 +191,10 @@ function ZineWork() {
           <Col xs={12} md={4} className="justify-content-center">
             <h2>NEXT STEPS</h2>
             <p>
-              I am planning to continue contributing in collaborative zines. In
-              the future, I would also like to host my own zine and create
-              digital tools for discovering and working together on zines.
+              I am planning to continue hosting collaborative zines and explore
+              new themes and formats. I would also like to create digital tools
+              for discovering, organizing, and collaborating on zine projects to
+              make the process more accessible for others.
             </p>
           </Col>
         </Row>

@@ -3,7 +3,7 @@ import DesignValue from "./DesignValue";
 import NavBar from "./NavBar";
 import hackbeanpotThumbnail from "../assets/HBPS&O.png";
 import hbp1 from "../assets/hbp/hbpInsta.png";
-import hbp2 from "../assets/hbp/hbpSite.png";
+import hbp2 from "../assets/hbp/Screen Recording 2026-08-30 164758.mp4";
 import hbp3 from "../assets/hbp/hbpDesign.png";
 import hbp4 from "../assets/hbp/hackbeanpotTeam.jpg";
 
@@ -58,7 +58,7 @@ function HackBeanpot() {
                 </div>
               </Col>
               <Col xs={12} md={7} className="project-detail-copy">
-                <h2>DESIGN X S&O</h2>
+                <h2>2025 ROADTRIP: DESIGN X S&O</h2>
                 <p className="m-0">
                   Collaborated with the Social and Outreach team to design 20+
                   social media posts using Figma. Created slide deck and
@@ -71,21 +71,23 @@ function HackBeanpot() {
             <Row className="project-detail-item g-3 align-items-center">
               <Col xs={12} md={5} className="project-detail-media">
                 <div className="ratio ratio-16x9 w-100">
-                  <Image
+                  <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
                     src={hbp2}
-                    alt="illustration of the value"
                     className="w-100 h-100"
                     style={{ objectFit: "cover" }}
                   />
                 </div>
               </Col>
               <Col xs={12} md={7} className="project-detail-copy">
-                <h2>DESIGN X TECH</h2>
+                <h2>2026 CARNIVAL: DESIGN X TECH</h2>
                 <p className="m-0">
                   My current role on the design team. Designed the first
-                  HackBeanpot placeholder site, and am collaborating on the main
-                  site. Engage on weekly meetings receiving and giving feedback
-                  on our work.
+                  HackBeanpot placeholder site, annual themed main site, and
+                  livesite, displaying real-time event information and updates.
                 </p>
                 <a
                   href="https://www.hackbeanpot.com/"
