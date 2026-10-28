@@ -32,7 +32,7 @@ function AboutMe() {
             <br></br>
             <Stack direction="horizontal" gap={4}>
               <a
-                href="https://drive.google.com/file/d/1iWDgjSQ_FsVQgWKdPiRLWqmQ0DiYWDKO/view?usp=sharing"
+                href="https://drive.google.com/file/d/13A-Sc_9qRw0kc23I0o-WrM0iD8e9BT1d/view?usp=sharing"
                 style={{ textDecoration: "underline" }}
               >
                 Resume
